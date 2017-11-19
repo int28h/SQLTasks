@@ -213,7 +213,7 @@ where employee_id is an employee's ID number, name is their name, months is the 
   
 ***Sample Input***  
    
-![img]https://s3.amazonaws.com/hr-challenge-images/19629/1458558202-9a8721e44b-ScreenShot2016-03-21at4.32.59PM.png)  
+![img](https://s3.amazonaws.com/hr-challenge-images/19629/1458558202-9a8721e44b-ScreenShot2016-03-21at4.32.59PM.png)  
   
 ***Sample Output***  
   
