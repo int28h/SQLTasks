@@ -195,4 +195,45 @@ Belvet
   
 Only Ashley, Julia, and Belvet have Marks > 75. If you look at the last three characters of each of their names, there are no duplicates and 'ley' < 'lia' < 'vet'.   
   
-	
+	SELECT name FROM students WHERE marks > 75 ORDER BY SUBSTR(name, LENGTH(name)-2, 3), id;
+  
+  
+  
+# Employee Names  
+  
+Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in alphabetical order.  
+  
+***Input Format***  
+  
+The Employee table containing employee data for a company is described as follows:   
+  
+![img](https://s3.amazonaws.com/hr-challenge-images/19629/1458557872-4396838885-ScreenShot2016-03-21at4.27.13PM.png)  
+  
+where employee_id is an employee's ID number, name is their name, months is the total number of months they've been working for the company, and salary is their monthly salary.  
+  
+***Sample Input***  
+   
+![img]https://s3.amazonaws.com/hr-challenge-images/19629/1458558202-9a8721e44b-ScreenShot2016-03-21at4.32.59PM.png)  
+  
+***Sample Output***  
+  
+Angela  
+Bonnie  
+Frank  
+Joe  
+Kimberly  
+Lisa  
+Michael  
+Patrick  
+Rose  
+Todd  
+  
+	SELECT name FROM employee ORDER BY name;
+  
+  
+  
+# Employee Salaries  
+  
+Write a query that prints a list of employee names (i.e.: the name attribute) for employees in Employee having a salary greater than $2000 per month who have been employees for less than 10 months. Sort your result by ascending employee_id.  
+  
+	SELECT name FROM employee WHERE salary > 2000 AND months < 10 ORDER BY employee_id;
