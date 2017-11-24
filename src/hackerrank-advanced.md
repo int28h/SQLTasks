@@ -45,20 +45,20 @@ An OCCUPATIONS table that contains the following records:
 ![img](https://s3.amazonaws.com/hr-challenge-images/12889/1443816608-0b4d01d157-2.png)  
   
 ***Sample Output***  
-	Ashely(P)
-	Christeen(P)
-	Jane(A)
-	Jenny(D)
-	Julia(A)
-	Ketty(P)
-	Maria(A)
-	Meera(S)
-	Priya(S)
-	Samantha(D)
-	There are a total of 2 doctors.
-	There are a total of 2 singers.
-	There are a total of 3 actors.
-	There are a total of 3 professors. 
+	Ashely(P)  
+	Christeen(P)  
+	Jane(A)  
+	Jenny(D)  
+	Julia(A)  
+	Ketty(P)  
+	Maria(A)  
+	Meera(S)  
+	Priya(S)  
+	Samantha(D)  
+	There are a total of 2 doctors.  
+	There are a total of 2 singers.  
+	There are a total of 3 actors.  
+	There are a total of 3 professors.   
   
 	SELECT (name || '(' || SUBSTR(occupation,1,1) || ')') FROM occupations ORDER BY name;
 	SELECT ('There are a total of ' || COUNT(occupation) || ' ' || LOWER(occupation) || 's' || '.') FROM occupations GROUP BY occupation ORDER BY COUNT(occupation), occupation ASC;
