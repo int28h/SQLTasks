@@ -6,4 +6,4 @@
   
   
   
-### [Задания](src/UnderstandingSQL.md.sql) из книги Мартина Грабера "Понимание SQL".  
+### [Задания](src/UnderstandingSQL.md) из книги Мартина Грабера "Понимание SQL".  
