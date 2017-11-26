@@ -1,9 +1,15 @@
-### Задания с сайта [Hackerrank](https://www.hackerrank.com/domains/sql/select)  
+### Задачи с сайта [Hackerrank](https://www.hackerrank.com/domains/sql/select) (Oracle SQL)     
   
-[Basic Select](src/hackerrank-basics.md)  
+[Basic Select](src/hackerrank-basic-select.md)  
   
-[Advanced Select](src/hackerrank-advanced.md)  
+[Advanced Select](src/hackerrank-advanced-select.md)  
+  
+[Aggregation](src/hackerrank-aggregation.md)  
   
   
   
-### [Задания](src/UnderstandingSQL.md) из книги Мартина Грабера "Понимание SQL".  
+### [Задачи](src/stepik-databases-introduction.md) из курса ["Введение в базы данных"](https://stepik.org/course/551/syllabus) (MySQL)   
+  
+  
+  
+### [Задачи](src/UnderstandingSQL.md) из книги Мартина Грабера "Понимание SQL".  

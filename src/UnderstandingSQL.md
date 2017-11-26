@@ -99,7 +99,7 @@
   
 Напишите запрос который выберет все порядки имеющие ненулевые значения или не NULL в поле amt(сумма).   
   
-	SELECT * from orders WHERE NOT (amt = 0 OR amt IS NULL); 
+	SELECT * FROM orders WHERE NOT (amt = 0 OR amt IS NULL); 
   
 Напишите запрос который сосчитал бы суммарное количество заказов на 3 Октября.  
   
