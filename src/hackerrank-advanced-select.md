@@ -37,11 +37,14 @@ where [occupation_count] is the number of occurrences of an occupation in OCCUPA
   
 ***Input Format***  
 The OCCUPATIONS table is described as follows:   
+  
 ![IMG](https://s3.amazonaws.com/hr-challenge-images/12889/1443816414-2a465532e7-1.png)  
+  
 Occupation will only contain one of the following values: Doctor, Professor, Singer or Actor.  
   
 ***Sample Input***  
 An OCCUPATIONS table that contains the following records:  
+  
 ![img](https://s3.amazonaws.com/hr-challenge-images/12889/1443816608-0b4d01d157-2.png)  
   
 ***Sample Output***  
