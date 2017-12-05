@@ -6,6 +6,8 @@
   
 [Aggregation](src/hackerrank-aggregation.md)  
   
+[Basic Join](src/hackerrank-basic-join.md)  
+  
   
   
 ### [Задачи](src/stepik-databases-introduction.md) из курса ["Введение в базы данных"](https://stepik.org/course/551/syllabus) (MySQL)   
