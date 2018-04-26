@@ -53,12 +53,12 @@ Write a query to help Eve.
   
 ***Sample Output***  
   
-	Maria 10 99
-	Jane 9 81
-	Julia 9 88 
-	Scarlet 8 78
-	NULL 7 63
-	NULL 7 68  
+Maria 10 99  
+Jane 9 81  
+Julia 9 88  
+Scarlet 8 78  
+NULL 7 63  
+NULL 7 68  
   
 	SELECT CASE 
 		WHEN Grades.Grade < 8 THEN 'NULL' 
@@ -68,3 +68,39 @@ Write a query to help Eve.
 	FROM Students, Grades 
 	WHERE Students.Marks >= Grades.Min_mark AND Students.Marks <= Grades.Max_mark 
 	ORDER BY Grades.Grade DESC, Students.Name;
+  
+  
+  
+# Top Competitors  
+  
+Julia just finished conducting a coding contest, and she needs your help assembling the leaderboard! Write a query to print the respective hacker_id and name of hackers who achieved full scores for more than one challenge. Order your output in descending order by the total number of challenges in which the hacker earned a full score. If more than one hacker received full scores in same number of challenges, then sort them by ascending hacker_id.  
+  
+***Input Format***  
+  
+The following tables contain contest data:  
+  
+Hackers: The hacker_id is the id of the hacker, and name is the name of the hacker.  
+  
+![img](https://s3.amazonaws.com/hr-challenge-images/19504/1458526776-67667350b4-ScreenShot2016-03-21at7.45.59AM.png)  
+  
+Difficulty: The difficult_level is the level of difficulty of the challenge, and score is the score of the challenge for the difficulty level.  
+  
+![img](https://s3.amazonaws.com/hr-challenge-images/19504/1458526915-57eb75d9a2-ScreenShot2016-03-21at7.46.09AM.png)  
+  
+Challenges: The challenge_id is the id of the challenge, the hacker_id is the id of the hacker who created the challenge, and difficulty_level is the level of difficulty of the challenge.  
+  
+![img](https://s3.amazonaws.com/hr-challenge-images/19504/1458527032-f9ca650442-ScreenShot2016-03-21at7.46.17AM.png)  
+  
+Submissions: The submission_id is the id of the submission, hacker_id is the id of the hacker who made the submission, challenge_id is the id of the challenge that the submission belongs to, and score is the score of the submission.   
+  
+![img](https://s3.amazonaws.com/hr-challenge-images/19504/1458527077-298f8e922a-ScreenShot2016-03-21at7.46.29AM.png)  
+  
+	SELECT Submissions.hacker_id, Hackers.name from Hackers, Submissions, Challenges, Difficulty
+	WHERE Submissions.score = Difficulty.score
+	AND Hackers.hacker_id = Submissions.hacker_id 
+	AND Submissions.challenge_id = Challenges.challenge_id 
+	AND Challenges.difficulty_level = Difficulty.difficulty_level
+	GROUP BY Submissions.hacker_id, Hackers.name
+	HAVING count(*) > 1 
+	ORDER BY count(*) DESC, Submissions.hacker_id ASC;
+  
