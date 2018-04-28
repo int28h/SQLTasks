@@ -45,6 +45,8 @@ Ketty gives Eve a task to generate a report containing three columns: Name, Grad
   
 Write a query to help Eve.  
   
+***Note***: Print "NULL"  as the name if the grade is less than 8.  
+  
 ***Sample Input***  
   
 ![img](https://s3.amazonaws.com/hr-challenge-images/12891/1443818093-b79f376ec1-3.png)  
@@ -56,10 +58,7 @@ Write a query to help Eve.
 	Julia 9 88 
 	Scarlet 8 78
 	NULL 7 63
-	NULL 7 68
-  
-***Note***  
-Print "NULL"  as the name if the grade is less than 8.  
+	NULL 7 68  
   
 	SELECT CASE 
 		WHEN Grades.Grade < 8 THEN 'NULL' 
